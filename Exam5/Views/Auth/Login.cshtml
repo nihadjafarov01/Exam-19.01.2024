@@ -65,6 +65,7 @@
                                                 </label>
                                             </div>
                                         </div>
+                                        <div asp-validation-summary="All"></div>
                                         <button type="submit" asp-action="Login" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </button>
@@ -81,7 +82,7 @@
                                         <a class="small" href="forgot-password.html">Forgot Password?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        <a class="small" asp-action="Register">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
@@ -104,6 +105,11 @@
 
     <!-- Custom scripts for all pages-->
     <script src="~/admin/js/sb-admin-2.min.js"></script>
+
+    <script src="~/lib1/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib1/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib1/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
 
 </body>
 

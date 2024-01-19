@@ -19,7 +19,7 @@ namespace Exam5.Business.Services.Implements
         }
 
 
-        public async Task<bool> Register(RegisterVM vm)
+        public async Task<IdentityResult> Register(RegisterVM vm)
         {
             IdentityUser user = new IdentityUser
             {
@@ -27,15 +27,14 @@ namespace Exam5.Business.Services.Implements
                 Email = vm.Email,
             };
             var result = await _userManager.CreateAsync(user, vm.Password);
-            if (!result.Succeeded)
+            if(result.Succeeded)
             {
-                return false;
+                await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
             }
-            await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
-            return true;
+            return result;
         }
 
-        public async Task<bool> Login(LoginVM vm)
+        public async Task<SignInResult> Login(LoginVM vm)
         {
             IdentityUser user;
             if(vm.UsernameOrEmail.Contains("@"))
@@ -46,16 +45,12 @@ namespace Exam5.Business.Services.Implements
             {
                 user = await _userManager.FindByNameAsync(vm.UsernameOrEmail);
             }
-            if(user == null)
+            if (user == null)
             {
-                return false;
+                return new SignInResult();
             }
-            var result = await _signInManager.PasswordSignInAsync(user, vm.Password,vm.RememberMe,false);
-            if (!result.Succeeded)
-            {
-                return false;
-            }
-            return true;
+            SignInResult result = await _signInManager.PasswordSignInAsync(user, vm.Password, vm.RememberMe, false);
+            return result;
         }
 
         public async Task<bool> CreateInits()

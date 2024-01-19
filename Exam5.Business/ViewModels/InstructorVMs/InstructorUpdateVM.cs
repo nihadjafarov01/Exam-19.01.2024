@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace Exam5.Business.ViewModels.InstructorVMs
 {
@@ -8,6 +9,6 @@ namespace Exam5.Business.ViewModels.InstructorVMs
         public string Fullname { get; set; }
         [MaxLength(64)]
         public string Position { get; set; }
-        public string ImageUrl { get; set; }
+        public IFormFile? ImageFile { get; set; }
     }
 }

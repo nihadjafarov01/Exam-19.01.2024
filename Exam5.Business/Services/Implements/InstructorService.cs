@@ -38,16 +38,16 @@ namespace Exam5.Business.Services.Implements
 
         public async Task<InstructorUpdateVM> UpdateAsync(int id)
         {
-            var model = await _repo.UpdateAsync(id);
+            var model = await _repo.GetByIdAsync(id);
             var vm = _mapper.Map<InstructorUpdateVM>(model);
             return vm;
         }
 
         public async Task UpdateAsync(int id, InstructorUpdateVM vm)
         {
-            var model = _mapper.Map<Instructor>(vm);
-            model.Id = id;
-            await _repo.UpdateAsync(model);
+            var model = await _repo.GetByIdAsync(id);
+            var rmodel = _mapper.Map(vm, model);
+            await _repo.UpdateAsync(rmodel);
         }
     }
 }

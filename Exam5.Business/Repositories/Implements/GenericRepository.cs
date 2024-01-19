@@ -41,11 +41,6 @@ namespace Exam5.Business.Repositories.Implements
             await _context.SaveChangesAsync();
         }
 
-        public async Task<T> UpdateAsync(int id)
-        {
-            return await GetByIdAsync(id);
-        }
-
         public async Task UpdateAsync(T model)
         {
             Table.Update(model);

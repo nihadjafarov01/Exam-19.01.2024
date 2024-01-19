@@ -37,9 +37,10 @@ namespace Exam5
             builder.Services.AddScoped<IInstructorService, InstructorService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
 
+
             builder.Services.AddAutoMapper(opt =>
             {
-                opt.AddProfile<InstructorMappingProfile>();
+                opt.AddProfile(new InstructorMappingProfile(builder.Environment.WebRootPath));
             });
 
             builder.Services.ConfigureApplicationCookie(opt =>

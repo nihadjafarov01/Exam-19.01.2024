@@ -6,16 +6,17 @@ namespace Exam5.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        IInstructorService _service {  get; }
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IInstructorService service)
         {
-            _logger = logger;
+            _service = service;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var data = await _service.GetAllAsync();
+            return View(data);
         }
 
         public IActionResult Privacy()

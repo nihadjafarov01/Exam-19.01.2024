@@ -9,3 +9,14 @@ C:\Users\Birinci Novbe\Desktop\Exam 19.01.2024\Exam5.Core\obj\Debug\net6.0\Exam5
 C:\Users\Birinci Novbe\Desktop\Exam 19.01.2024\Exam5.Core\obj\Debug\net6.0\refint\Exam5.Core.dll
 C:\Users\Birinci Novbe\Desktop\Exam 19.01.2024\Exam5.Core\obj\Debug\net6.0\Exam5.Core.pdb
 C:\Users\Birinci Novbe\Desktop\Exam 19.01.2024\Exam5.Core\obj\Debug\net6.0\ref\Exam5.Core.dll
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\bin\Debug\net6.0\Exam5.Core.deps.json
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\bin\Debug\net6.0\Exam5.Core.dll
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\bin\Debug\net6.0\Exam5.Core.pdb
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\obj\Debug\net6.0\Exam5.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\obj\Debug\net6.0\Exam5.Core.AssemblyInfoInputs.cache
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\obj\Debug\net6.0\Exam5.Core.AssemblyInfo.cs
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\obj\Debug\net6.0\Exam5.Core.csproj.CoreCompileInputs.cache
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\obj\Debug\net6.0\Exam5.Core.dll
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\obj\Debug\net6.0\refint\Exam5.Core.dll
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\obj\Debug\net6.0\Exam5.Core.pdb
+C:\Users\nihad\Downloads\Exam-19.01.2024\Exam5.Core\obj\Debug\net6.0\ref\Exam5.Core.dll
