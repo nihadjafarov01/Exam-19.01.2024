@@ -10,5 +10,6 @@ namespace Exam5.Business.ViewModels.InstructorVMs
         [MaxLength(64)]
         public string Position { get; set; }
         public IFormFile? ImageFile { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

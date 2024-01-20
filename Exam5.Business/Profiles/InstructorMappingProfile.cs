@@ -9,23 +9,22 @@ namespace Exam5.Business.Profiles
         {
             CreateMap<Instructor, InstructorListItemVM>();
             CreateMap<Instructor, InstructorUpdateVM>();
-
             CreateMap<InstructorCreateVM, Instructor>()
-                .ForMember(i => i.ImageUrl, opt => opt.Ignore())
-                .AfterMap((src, dest) =>
+                .ForMember(i => i.ImageUrl ,opt => opt.Ignore())
+                .AfterMap(async (src, dest) =>
                 {
-                    if (src.ImageFile != null)
+                    if(src.ImageFile != null)
                     {
-                        dest.ImageUrl = src.ImageFile.SaveAndProvideName(rootPath);
+                        dest.ImageUrl = await src.ImageFile.SaveAndProvideUrlAsync(rootPath);
                     }
                 });
-            CreateMap<InstructorUpdateVM,Instructor>()
+            CreateMap<InstructorUpdateVM, Instructor>()
                 .ForMember(i => i.ImageUrl, opt => opt.Ignore())
-                .AfterMap((src, dest) =>
+                .AfterMap(async (src, dest) =>
                 {
                     if (src.ImageFile != null)
                     {
-                        dest.ImageUrl = src.ImageFile.SaveAndProvideName(rootPath);
+                        dest.ImageUrl = await src.ImageFile.SaveAndProvideUrlAsync(rootPath);
                     }
                 });
         }

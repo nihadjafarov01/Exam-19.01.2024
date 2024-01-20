@@ -27,7 +27,7 @@
         {
             foreach(var item in Model)
             {
-                <tr>
+                <tr class=@((item.IsDeleted) ? "table-danger" : "")>
                     <th>@item.Id</th>
                     <td>@item.Fullname</td>
                     <td>@item.Position</td>

@@ -1,4 +1,5 @@
-﻿using Exam5.Models;
+﻿using Exam5.Business.ViewModels.InstructorVMs;
+using Exam5.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -16,7 +17,8 @@ namespace Exam5.Controllers
         public async Task<IActionResult> Index()
         {
             var data = await _service.GetAllAsync();
-            return View(data);
+            var rdata = data.Where(i => !i.IsDeleted);
+            return View(rdata);
         }
 
         public IActionResult Privacy()

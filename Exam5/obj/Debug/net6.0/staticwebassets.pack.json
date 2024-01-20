@@ -7341,12 +7341,32 @@
       "PackagePath": "staticwebassets\\css\\style.min.css"
     },
     {
+      "Id": "C:\\Users\\nihad\\Downloads\\Exam-19.01.2024\\Exam5\\wwwroot\\images\\instructors\\ImageFile",
+      "PackagePath": "staticwebassets\\images\\instructors"
+    },
+    {
+      "Id": "C:\\Users\\nihad\\Downloads\\Exam-19.01.2024\\Exam5\\wwwroot\\images\\instructors\\img-1.png",
+      "PackagePath": "staticwebassets\\images\\instructors\\img-1.png"
+    },
+    {
+      "Id": "C:\\Users\\nihad\\Downloads\\Exam-19.01.2024\\Exam5\\wwwroot\\images\\instructors\\img-12.png",
+      "PackagePath": "staticwebassets\\images\\instructors\\img-12.png"
+    },
+    {
       "Id": "C:\\Users\\nihad\\Downloads\\Exam-19.01.2024\\Exam5\\wwwroot\\images\\instructors\\img-4.png",
       "PackagePath": "staticwebassets\\images\\instructors\\img-4.png"
     },
     {
       "Id": "C:\\Users\\nihad\\Downloads\\Exam-19.01.2024\\Exam5\\wwwroot\\images\\instructors\\img-5.png",
       "PackagePath": "staticwebassets\\images\\instructors\\img-5.png"
+    },
+    {
+      "Id": "C:\\Users\\nihad\\Downloads\\Exam-19.01.2024\\Exam5\\wwwroot\\images\\instructors\\linkedin-icon.png",
+      "PackagePath": "staticwebassets\\images\\instructors\\linkedin-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\nihad\\Downloads\\Exam-19.01.2024\\Exam5\\wwwroot\\images\\instructors\\linkedin-icon1.png",
+      "PackagePath": "staticwebassets\\images\\instructors\\linkedin-icon1.png"
     },
     {
       "Id": "C:\\Users\\nihad\\Downloads\\Exam-19.01.2024\\Exam5\\wwwroot\\img\\about.jpg",

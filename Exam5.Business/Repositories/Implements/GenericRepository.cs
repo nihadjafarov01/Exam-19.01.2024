@@ -22,7 +22,7 @@ namespace Exam5.Business.Repositories.Implements
 
         public async Task DeleteAsync(T model)
         {
-            Table.Remove(model);
+            model.IsDeleted = true;
             await SaveAsync();
         }
 
